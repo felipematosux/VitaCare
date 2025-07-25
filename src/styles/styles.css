@@ -8,13 +8,13 @@
 }
 
 * {
+    font-family: "Lato", sans-serif;
+
+    font-style: normal;
     margin: 0;
     padding: 0;
 }
 
-body {
-
-}
 
 header {
     display: flex;
@@ -23,7 +23,6 @@ header {
 }
 .container {
     width:990px;
-    background-color: red;
     display: flex;
     justify-content: space-around;  
     align-items: center;
@@ -35,4 +34,37 @@ header {
 
 .menu {
     display: flex;
+    font-weight: 500;
+
+}
+
+nav ul, nav li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--darkmain);
+}
+
+nav a:hover {
+    background-color: var(--primary);
+    color: var(--lightmain);
+    box-shadow: 1px 0px 2px 0px #1F1F1F;
+}
+
+#banner {
+    background-image: url('../assets/img/img1.png');
+    background-position: center;
+    background-size: cover;
+    height: 670px;
 }
