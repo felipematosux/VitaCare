@@ -1,0 +1,38 @@
+:root {
+    --primary:#2D9C6F;
+    --secondary:#2F80ED;
+    --darkmain:#121212;
+    --dark2:#1F1F1F;
+    --lightmain:#F4F8F7;
+    --light2:#E0F3EC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+.container {
+    width:990px;
+    background-color: red;
+    display: flex;
+    justify-content: space-around;  
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+}
+
+.menu {
+    display: flex;
+}
