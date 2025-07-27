@@ -68,3 +68,7 @@ nav a:hover {
     background-size: cover;
     height: 670px;
 }
+
+.boxes {
+    display: flex;
+}
