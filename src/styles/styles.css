@@ -1,3 +1,5 @@
+/* Global Settings: */
+
 :root {
     --primary:#2D9C6F;
     --secondary:#2F80ED;
@@ -14,6 +16,11 @@
     padding: 0;
 }
 
+body {
+
+}
+
+/* Header settings: */
 
 header {
     display: flex;
@@ -23,17 +30,18 @@ header {
 .container {
     width:990px;
     display: flex;
-    justify-content: space-around;  
-    align-items: center;
+    justify-content: space-between;  
 }
 
 .logo {
     display: flex;
+    align-items: center;
 }
 
 .menu {
     display: flex;
     font-weight: 500;
+    align-items: center;
 
 }
 
@@ -53,6 +61,7 @@ nav a {
     text-decoration: none;
     text-transform: uppercase;
     color: var(--darkmain);
+    border-radius: 3px;
 }
 
 nav a:hover {
@@ -61,19 +70,112 @@ nav a:hover {
     box-shadow: 1px 0px 2px 0px #1F1F1F;
 }
 
+/* Banner Settings: */
+
 #banner {
     background-image: url('../assets/img/img1.png');
     background-position: center;
     background-size: cover;
     height: 670px;
+    display: flex;
+    justify-content: center;
 }
 
-.boxes {
+.column {
+    flex-direction: column;
+}
+
+.banner_headline {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner_options {
+    height: 210px;
     display: flex;
 }
 
-h1, h3 {
-    font-style: normal;
-    font-weight: 700;
+.banner_headline h1 {
     color: var(--darkmain);
+    font-size: 70px;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+}
+
+.banner_headline h2 {
+    color: var(--darkmain);
+    font-size: 21px;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+    margin-top: 30px;
+}
+
+.banner1, .banner2, .banner3 {
+    flex: 1;
+    color: var(--lightmain);
+    padding: 20px;
+}
+
+.banner1 {
+    background-color: var(--primary);
+    border-radius: 20px 0 0 0;
+}
+
+.banner2 {
+    background-color: var(--secondary);
+}
+
+.banner3 {
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 20px 0 0;
+}
+
+.banner_title {
+    font-size: 21px;
+}
+
+.banner_desc {
+    font-size:12px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.banner_options a {
+    display: inline-block;
+    border: 1px solid var(--lightmain);
+    padding: 5px;
+    color: var(--lightmain);
+    font-size: 13px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.monday, .saturday, .sunday {
+    margin-top: 20px;
+    font-size: 12px;
+    border-bottom: 1px solid var(--lightmain);
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+/* Section 1  */
+
+#general {
+    display: flex;
+    justify-content: center;
+}
+
+#general section {
+    flex: 2;
+}
+
+#general aside {
+    flex: 1;
 }
