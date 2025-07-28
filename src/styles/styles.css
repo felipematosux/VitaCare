@@ -9,7 +9,6 @@
 
 * {
     font-family: "Lato", sans-serif;
-
     font-style: normal;
     margin: 0;
     padding: 0;
@@ -71,4 +70,10 @@ nav a:hover {
 
 .boxes {
     display: flex;
+}
+
+h1, h3 {
+    font-style: normal;
+    font-weight: 700;
+    color: var(--darkmain);
 }
